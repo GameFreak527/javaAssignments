@@ -1,3 +1,8 @@
 calculator\Driver.class
-calculator\Calculator.class
+library\User.class
 helloWorld\Driver.class
+library\Controller.class
+library\Author.class
+calculator\Calculator.class
+library\Driver.class
+library\Book.class
