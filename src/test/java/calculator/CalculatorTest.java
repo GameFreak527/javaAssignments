@@ -31,9 +31,9 @@ public class CalculatorTest {
 		assertEquals(200, a);
 	}
 	
-	@Test
+	@Test (expected = ArithmeticException.class)
 	public void testDivision() {
-		long a = cal.divideNumbers(10, 20);
+		long a = cal.divideNumbers(10, 0);
 		assertEquals(0, a);
 	}
 

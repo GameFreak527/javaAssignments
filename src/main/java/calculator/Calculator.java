@@ -14,7 +14,7 @@ public class Calculator {
 		return  a * b;
 	}
 	
-	public long divideNumbers(long a, long b) {
+	public long divideNumbers(long a, long b) throws ArithmeticException{
 		return a / b;
 	}
 }

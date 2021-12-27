@@ -21,12 +21,12 @@ public class Driver {
 
 	}
 	
-	public static void calculator() {
+	private static void calculator() {
 		while(num !=0) {
 			//Taking input from user
-			System.out.println("Enter the first number : ");
+			System.out.print("Enter the first number : ");
 			a = scan.nextInt();
-			System.out.println("Enter the second numbers : ");
+			System.out.print("Enter the second numbers : ");
 			b = scan.nextInt();
 			
 			System.out.println("Enter 1 for Addition ");
