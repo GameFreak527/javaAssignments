@@ -12,7 +12,7 @@ public abstract class OnlineServices {
 	}
 	
 	private int setPoints(int points) {
-		return OnlineServices.points = points;
+		return this.points = points;
 	}
 	
 	public int avilablePoints() {
