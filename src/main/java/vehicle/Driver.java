@@ -13,6 +13,8 @@ public class Driver {
 		System.out.println(ferrari.toString());
 		
 		ferrari.play();
+		ferrari.gear(4);
+		ferrari.engineType(2);
 		
 	}
 

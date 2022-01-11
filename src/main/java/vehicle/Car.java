@@ -1,6 +1,6 @@
 package vehicle;
 
-public class Car extends Vehicle implements MusicSystem{
+public class Car extends Vehicle implements GearSystem,MusicSystem{
 	
 	public Car(int door, int window, int wheel) {
 		super(door, window, wheel);
@@ -25,6 +25,7 @@ public class Car extends Vehicle implements MusicSystem{
 		this.name = name;
 	}
 	
+	@Override
 	public String toString() {
 		return super.toString() + "\n" +
 				String.format("Car name : %s, and its Top speed is : %d", this.getName(),this.getSpeed());
@@ -38,6 +39,20 @@ public class Car extends Vehicle implements MusicSystem{
 	@Override
 	public void play() {
 		System.out.println("This car can play music");
+	}
+
+	@Override
+	public void engineType(int type) {
+		if(type <= 0 || type > 2) {
+			System.out.println("Please choose between 1 and 2");
+			return;
+		}
+		if(type == 1) {
+			System.out.println("You have choosen the Manual engine system");
+		}
+		if(type == 2) {
+			System.out.println("You have choosen the Automatic engine system");
+		}
 		
 	}
 
